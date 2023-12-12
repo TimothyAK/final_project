@@ -1,0 +1,121 @@
+@import url(style.css);
+
+body {
+    background-color: var(--secondary);
+}
+
+/* Article */
+.container-fluid:has(> .article-container) {
+    background-color: whitesmoke;
+}
+.article-container {
+    margin: 70px 10rem 0 10rem;
+    padding: 1.5rem 0;
+}
+.article-container > h1, .article-container > p {
+    margin: 0;
+}
+.article-container > h6 {
+    font-size: 1.15rem;
+}
+.article-date {
+    font-size: 12px;
+}
+.article-container > .article-text {
+    margin-top: 1.5rem;
+}
+.article-container > .article-author {
+    margin-top: 0.5rem;
+    color: gray;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.article-button {
+    margin-top: 5rem;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.article-button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 1229px){
+    /* Navbar */
+    .navbar-container {
+        margin: 0 10rem;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* Article */
+    .article-container {
+        margin: 70px 7rem 0 7rem;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    /* Navbar */
+    .navbar-container {
+        margin: 0 5rem;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* Article */
+    .article-container {
+        margin: 70px 2rem 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /* Navbar */
+    .navbar-container {
+        display: flex;
+        align-content: start;
+        margin: 0 2rem;
+        height: 100%;
+        flex-direction: row;
+    }
+    .navbar-items {
+        display: none;
+    }
+
+    /* Article */
+    .article-container {
+        margin-top: 0;
+    }
+    .article-button {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    /* Navbar */
+    .navbar-container {
+        display: flex;
+        align-content: start;
+        margin: 0 2rem;
+        height: 100%;
+        flex-direction: row;
+    }
+    .navbar-items {
+        display: none;
+    }
+
+    /* Main */
+    .main-container > h1 {
+        font-size: 2.5rem;
+    }
+    .main-container > p {
+        font-size: 0.9rem;
+    }
+
+    /* About Us */
+    .about-container > p, .blockquote {
+        font-size: 0.9rem;
+    }
+    .blockquote > p {
+        font-size: 0.9rem;
+    }
+}

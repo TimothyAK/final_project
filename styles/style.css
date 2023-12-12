@@ -1,0 +1,294 @@
+:root {
+    --primary: #cfcd55;
+    --secondary: #1a1a14;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 0;
+}
+hr.intersection {
+    margin: 0 10%;
+    border-top: 1px solid rgba(26, 26, 20, 1);
+    border-radius: 2px;
+}
+div.container-fluid {
+    padding: 0;
+}
+.blurred-bg {
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+}
+body.img-bg {
+    background-color: var(--secondary);
+    position: relative;
+    background-image: url(/assets/images/dark-stithy-workshop-with-hammer-anvil-firs-plan-fire-stove-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -999;
+}
+hl {
+    color: var(--primary);
+    background-color: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--secondary);
+    padding: 0;
+}
+.navbar-container {
+    display: flex; 
+    justify-content: space-between;
+    margin: 0 13rem;
+    padding: 0;
+    height: 100%;
+}
+.navbar-brand,.navbar-brand:hover {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+.nav-item {
+    margin: 0 1rem;
+    height: 100%;
+}
+.nav-link, .nav-link:focus {
+    color: var(--primary);
+    transition: all 0.1s ease;
+    border-radius: 4px;
+}
+.nav-link:hover, .nav-link.active {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transition: all 0.2s ease;
+}
+.navbar-toggle {
+    display: none;
+}
+.navbar-toggle.active {
+    display: block;
+    border: none;
+    color: var(--primary);
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+}
+
+/* Navbar Mobile Menu Off Canvas */
+.offcanvas {
+    background-color: var(--secondary);
+    padding: 0 2rem!important;
+    height: 200px!important;
+}
+.offcanvas-header > .btn-close {
+    background-color: var(--primary);
+}
+
+/* Main */
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    min-height: 500px;
+}
+.main-container > h1, .main-container > p {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px var(--secondary);
+    margin: 0;
+}
+.main-container > h1 {
+    margin-top: 70px;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.main-container > p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Content */
+.content-container {
+    padding: 1.5rem 0;
+    background-color: whitesmoke;
+}
+.posts-container {
+    margin-top: 1rem;
+}
+.post {
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 90%;
+    text-decoration: none;
+    color: black;
+}
+.post > * {
+    margin: 0;
+}
+.post-snippet {
+    font-weight: 300;
+}
+.post > .post-snippet, .post > .post-button {
+    margin-top: 1rem;
+}
+.post > a {
+    border: none;
+    color: var(--primary);
+}
+.post > .btn:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+.post:nth-child(1) {
+    margin: 0;
+}
+
+/* About Us */
+.about-container {
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+.about-container > * {
+    margin: 0;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px var(--secondary);
+}
+.about-containertext > h1 {
+    font-weight: 500;
+}
+.about-container > p, .blockquote {
+    margin-top: 1rem;
+}
+.blockquote > p {
+    font-size: 1rem;
+}
+.blockquote-footer {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Footer */
+.footer-container {
+    padding: 2rem 7rem;
+}
+.footer-container > h6, .footer-container > p {
+    margin: 0;
+    color: var(--primary);
+}
+.footer-container > p {
+    margin-top: 0.5rem;
+}
+.container-fluid:has(> .footer-container) {
+    background-color: var(--secondary);
+}
+
+@media only screen and (max-width: 1229px){
+    /* Navbar */
+    .navbar-container {
+        margin: 0 10rem;
+        padding: 0;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    /* Navbar */
+    .navbar-container {
+        margin: 0 5rem;
+        padding: 0;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /* Navbar */
+    .navbar-container {
+        display: flex;
+        align-content: start;
+        margin: 0 2rem;
+        height: 100%;
+        flex-direction: row;
+    }
+    .navbar-items {
+        display: none;
+    }
+
+    /* Main */
+    .main-container {
+        min-height: none;
+    }
+    .main-container > h1 {
+        margin-top: 0!important;
+    }
+
+    /* Content */
+    .post-title {
+        font-size: 1rem;
+    }
+    .post-snippet {
+        display: none;
+    }
+    .post-date {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 1rem 1rem;
+    }
+    .footer-container > h6, .footer-container > p {
+        margin: 0;
+        color: var(--primary);
+    }
+    .footer-container > h6 {
+        font-size: 0.8rem;
+    }
+    .footer-container > p {
+        margin-top: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .container-fluid:has(> .footer-container) {
+        background-color: var(--secondary);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    /* Navbar */
+    .navbar-container {
+        display: flex;
+        align-content: start;
+        margin: 0 2rem;
+        height: 100%;
+        flex-direction: row;
+    }
+    .navbar-items {
+        display: none;
+    }
+
+    /* Main */
+    .main-container > h1 {
+        font-size: 2.5rem;
+    }
+    .main-container > p {
+        font-size: 0.9rem;
+    }
+
+    /* About Us */
+    .about-container > p, .blockquote {
+        font-size: 0.9rem;
+    }
+    .blockquote > p {
+        font-size: 0.9rem;
+    }
+}

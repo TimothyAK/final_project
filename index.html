@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManForge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="-1" class="img-bg">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand fixed-top" id="navbar">
+        <div class="d-flex justify-content-between container-fluid navbar-container">
+            <div class="navbar-brand">ManForge</div>
+            <button type="button" class="navbar-toggle" id="navbar-toggler">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="navbar-items">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#posts">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar OffCanvas -->
+    <div class="offcanvas offcanvas-top" id="mobile-navbar-menu">
+        <div class="offcanvas-header m-0 p-0"> 
+            <div class="navbar-brand">ManForge</div>
+            <button type="button" class="btn-close btn-dark" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body m-0 p-0">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#posts">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Main-->
+    <div class="container-fluid" id="home">
+        <div class="d-flex flex-column align-items-center main-container">
+            <h1 class="col-6" id="main-title">Welcome to <hl>ManForge!</hl></h1>
+            <p class="col-5" id="main-text">This blog is a place for those who are on the path of improving themselves. Here we will share our experience and tips that works for us on our journey of self-improvement. Join us as we sail through the sea of life while continuing to polish our mind, body, and soul.</p>   
+        </div>
+    </div>
+
+    <!--Content-->
+    <div class="container-fluid" id="posts">
+        <div class="d-flex flex-column align-items-center content-container">
+            <h1>Our Latest Posts</h1>
+            <div class="d-flex flex-column align-items-center justify-content-around posts-container col-8">
+                <div class="post">
+                    <h4 class="post-title">The Mindset of Hunger: Understanding the Body's Survival and Self-Control</h4>
+                    <p class="post-date">11 December 2023</p>
+                    <p class="post-snippet">Hunger, that gnawing sensation that prompts us to seek sustenance, is a primal instinct deeply ingrained in our biology. Yet, the human body is remarkably resilient, capable of enduring extended periods without food. Contrary to popular belief, the sensation of hunger often transcends mere physical necessity and is, to a significant extent, influenced by psychological and societal factors. Exploring the limits of survival without food sheds light on the intricate interplay between the body and the mind, reshaping our understanding of hunger as more than just a physical requirement.
+                    </p>
+                    <a href="The Mindset of Hunger: Understanding the Body's Survival and Self-Control.html" type="button" class="post-button btn btn-dark">Read More</a>
+                </div>
+                <div class="post">
+                    <h4 class="post-title">Revealing the Profound Influence of Exercise on Everyday Living</h4>
+                    <p class="post-date">11 December 2023</p>
+                    <p class="post-snippet">In the quest for a fulfilling and balanced life, the significance of exercise cannot be overstated. Beyond its evident physical benefits, working out possesses the remarkable ability to profoundly impact our day-to-day activities, influencing our mental, emotional, and social realms.
+                    </p>
+                    <a href="Revealing the Profound Influence of Exercise on Everyday Living.html" type="button" class="post-button btn btn-dark">Read More</a>
+                </div>
+                <div class="post">
+                    <h4 class="post-title">5 Impactful Self-Help Books That Inspire Growth and Change</h4>
+                    <p class="post-date">11 December 2023</p>
+                    <p class="post-snippet">In a world where personal growth and self-improvement are cherished, self-help books serve as guiding lights illuminating the path toward self-discovery, empowerment, and fulfillment. These literary gems offer insights, strategies, and wisdom, empowering readers to embark on transformative journeys. Among the vast array of self-help literature, five standout books have consistently captivated and inspired readers across the globe.
+                    </p>
+                    <a href="5 Impactful Self-Help Books That Inspire Growth and Change.html" type="button" class="post-button btn btn-dark">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About Us-->
+    <div class="container-fluid" id="about-us">
+        <div class="d-flex flex-column align-items-center justify-content-center about-container col-8">
+            <h1>About Us</h1>
+            <p>I am currently a student at a university who is trying to make themselves a better person. Though I know that I am still in the process of refinement I want to make this blog as a Journal for the things that I have picked up along my journey. I also hope that this blog could help other people who are also on the same path as mine.</p>
+            <blockquote class="blockquote">
+                <hr>
+                <p>“You must take personal responsibility. You cannot change the circumstances, the seasons, or the wind, but you can change yourself. That is something you have charge of.”</p>
+                <footer class="blockquote-footer">Jim Rohn</footer>
+                <hr>
+                </blockquote>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="footer-container">
+            <h6>Contact</h6>
+            <p>Email - ManForge@gmail.com</p>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
